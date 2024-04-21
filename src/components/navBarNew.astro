@@ -1,0 +1,40 @@
+---
+import logo_AM_verdes from "../images/logo_AM_verdes.png"
+import Image from "astro/components/Image.astro"
+---
+
+<div class="flex justify-between items-center w-[92%]  mx-auto">
+<div><Image src={logo_AM_verdes} alt="" class="min-w-16 w-32 h-auto"></div>
+  <div class="nav-links duration-500 md:static  bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+  <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+      <li>
+          <a class="hover:text-gray-500" href="#">Products</a>
+      </li>
+      <li>
+          <a class="hover:text-gray-500" href="#">Solution</a>
+      </li>
+      <li>
+          <a class="hover:text-gray-500" href="#">Resource</a>
+      </li>
+      <li>
+          <a class="hover:text-gray-500" href="#">Developers</a>
+      </li>
+      <li>
+          <a class="hover:text-gray-500" href="#">Pricing</a>
+      </li>
+  </ul>
+</div><!--menu -->
+<div>whatsapp /hamburguesa</div>
+</div> 
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navbarMenu = document.querySelector('.navbar-menu');
+  
+    navbarToggle.addEventListener('click', function() {
+      navbarMenu.classList.toggle('active');
+    });
+  });
+</script>
+  

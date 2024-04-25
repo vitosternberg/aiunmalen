@@ -1,0 +1,22 @@
+---
+import { Icon } from "astro-icon/components";
+import type { Links } from "../data/layout/links";
+import { linksData } from "../data/layout/links";
+import Link from "../../components/layout/Link.astro"
+import Image from "astro/components/Image.astro";
+import Logo_verdes from '../../images/logo_AM_verdes.png'
+
+---
+
+<footer>
+<div class="flex felx-col gap-3 border-y-[1px] py-5 border-blue-400">
+    <!-- <Icon name="logo_AM_verdes" width={116} height={24} /> -->
+   
+    <Image src={Logo_verdes} alt="" class="min-w-16 w-32 h-auto">
+    <nav class="flex flex-col gap-3">
+        {linksData.map((link:Links)=> <Link {...link}/>)}
+
+    </nav>
+</div>
+
+</footer>

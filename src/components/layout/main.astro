@@ -1,12 +1,11 @@
 ---
-import Layout from "./Layout.astro"
 import Image from "astro/components/Image.astro";
-import Spa_main from "../images/spa_main.png";
+import Spa_main from "../../images/spa_main.png";
 ---
 
-    <div class="text-white " style="position: relative; margin-bottom: 0; margin-top:0; ">
-        <div class="md:pl-12 md:pr-12">
-            <Image src={Spa_main} alt="gato" style=" max-width:100%;height:auto;" />
+    <div class="text-white w-full " style="position: relative; margin-bottom: 0; margin-top:0; ">
+        <div class=" w-full">
+            <Image src={Spa_main} alt="gato" class="w-full h-full" />
         </div>
         <span style="left: 10%; position: absolute; top: 10%; z-index:2;" class="pr-5 ">
             <h1 class="text-white font-display text-xl md:text-6xl pt-9 min-w-full">Belleza Significa Salud</h1>

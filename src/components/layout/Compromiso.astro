@@ -1,0 +1,25 @@
+---
+
+import Image from 'astro/components/Image.astro'
+import Compromise from "../../images/imagen_compromiso.jpeg";
+---
+<div class="pb-3 grid md:grid-cols-2 gap-1 bg-white">
+    <div class="grid md:columns-1 w-auto justify-items-center md:pl-12">
+        <Image src={Compromise} alt="" />
+   
+    </div>
+
+    <div class="pr-12 pl-5 md:columns-1 justify-items-center">
+        <h2 class="mt-9 py-2 text-zinc-900 text-3xl">NUESTRO COMPROMISO</h2>
+        
+        <h1 class="text-5xl text-[#65a30d] font-display md:text-6xl py-2">Bienvenido al descanso del alma</h1>
+        
+        <p class="font-bold py-2 pr-12 text-zinc-500 text-2xl">Spread over two floors, our beautiful spa offer a soothing environment in which you can rest, relax and feel competely rejuvenated.</p>
+
+        <p class="py-5 pr-12 text-zinc-400 text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. remaining essentially unchanged. 
+        It was popularised in the with theLorem Ipsum is simply dummy text of the printing and eentially unchanged.</p>
+
+        <a href="#" class="px-3 py-2 text-white rounded-full bg-Fuchsia-900 hover:bg-[#365314] hover:text-white">MORE SERVICES</a>
+    </div>
+</div>

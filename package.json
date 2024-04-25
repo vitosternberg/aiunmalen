@@ -13,8 +13,13 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/roboto": "^5.0.12",
     "@fontsource/satisfy": "^5.0.18",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@nanostores/preact": "^0.5.1",
     "astro": "^4.5.16",
     "astro-icon": "^1.1.0",
+    "astro-navbar": "^2.3.2",
+    "nanostores": "^0.10.3",
     "photoswipe": "^5.4.3",
     "swiper": "^11.1.1",
     "tailwindcss": "^3.4.3"

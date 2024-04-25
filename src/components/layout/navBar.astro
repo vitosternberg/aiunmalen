@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components";
+
+---
+
+<nav>
+
+  <div class=" flex justify-between items-center  bg-black py-12 md:text-lima-[200]">
+
+      <ul class="absolute left-[5%] md:text-white hidden gap-10 font-bold text-2xl md:flex md:items-left  md:flex-row ">
+        <li>Inicio</li>
+        <li>Servicios</li>  
+        <li>Blog Salud</li>
+      </ul>
+
+      <button class="rounded-md hover:bg-blue-600 md:hidden text-right" id="nav_button" >
+        <Icon name="menu" width={40} height={40} />
+      </button>
+    
+  </div>
+</nav>
+
+<script>
+import{ isSideMenuOpen} from '../store/store';
+const button =document.getElementById("nav_button");
+const handleOpenSideMenu =()=>{isSideMenuOpen.set(true);};
+button?.addEventListener('click',()=>handleOpenSideMenu());
+
+</script>

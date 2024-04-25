@@ -1,19 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-//import NavBar from '../layouts/navBar.astro';
-import Main from '../layouts/main.astro';
-import Compromise from '../layouts/compromise.astro';
-import Precios from '../layouts/precios.astro';
-import Carrousel from '..images/imagen_compromiso.jpeg';
-import Gallery from '../components/Gallery.astro'
-import NavBarNew from '../components/navBarNew.astro';
+import { Icon } from 'astro-icon/components';
 ---
-<NavBarNew />
-<!--<Main /> 
-<Compromise />
-<Precios />-->
 
+<Layout title="Bienvenido a Aiunmanel">
+    <main>
+        <Icon name="rocket" width={114} height={80} />
+        <h1 class="text-white">El descanso del Alma</h1>
+        <p class="font-display font-bold text-xl text-white">Vito</p>
+    </main>
 
-
+</Layout>
 

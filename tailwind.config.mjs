@@ -24,7 +24,7 @@ export default {
         800:'#889259'
       },
       Fuchsia:{
-      100:'#F7E8FC',
+      100:'#FAF1FE',
       900:'#CB6CE6'
       },
       zinc:{

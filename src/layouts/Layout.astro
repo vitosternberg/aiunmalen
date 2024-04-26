@@ -13,6 +13,8 @@ import SideMenu from '../components/layout/sideMenu.astro';
 import NavBrand from '../components/layout/navBrand.astro';
 import Compromiso from '../components/layout/Compromiso.astro';
 import Main from '../components/layout/main.astro';
+import NavBarSocial from '../components/layout/navBarSocial.astro'
+import Precios from '../components/layout/precios.astro';
 interface Props {title:string;}
 
 ---
@@ -29,12 +31,13 @@ interface Props {title:string;}
 		<title>{title}</title>
 	</head>
 	<body class="bg-lima-200 mx-6 text-white">
-		
+		<NavBarSocial />
 		<NavBrand />
 		
 		<NavBar />
 		<Main />
 		<Compromiso />
+		<Precios />
 		<SideMenu />
 		
 		<Footer />

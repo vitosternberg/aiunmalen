@@ -13,8 +13,13 @@ import Logo_verdes from '../../images/logo_AM_verdes.png'
     <!-- <Icon name="logo_AM_verdes" width={116} height={24} /> -->
    
     <Image src={Logo_verdes} alt="" class="min-w-16 w-32 h-auto">
-    <nav class="flex flex-col gap-3">
-        {linksData.map((link:Links)=> <Link {...link}/>)}
+    <nav class="flex flex-col gap-3 text-black">
+       
+        {
+            linksData.map((link)=>(
+                <Link {...link}/>
+            ))
+        }
 
     </nav>
 </div>

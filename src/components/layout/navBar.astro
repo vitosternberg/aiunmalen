@@ -5,16 +5,18 @@ import { Icon } from "astro-icon/components";
 
 <nav>
 
-  <div class=" flex justify-between items-center  bg-black py-12 md:text-lima-[200]">
+  <div class=" flex justify-end py-1 bg-green-600 md:justify-between items-center md:py-8 md:bg-black  md:text-lima-200">
 
-      <ul class="absolute left-[5%] md:text-white hidden gap-10 font-bold text-2xl md:flex md:items-left  md:flex-row ">
+      <ul class="absolute left-[5%] md:text-white text-normal hidden gap-10 font-bold md:text-normal md:flex md:items-left  md:flex-row ">
         <li>Inicio</li>
         <li>Servicios</li>  
         <li>Blog Salud</li>
+        <li>Crear Una Cita</li>
       </ul>
 
       <button class="rounded-md hover:bg-blue-600 md:hidden text-right" id="nav_button" >
         <Icon name="menu" width={40} height={40} />
+        
       </button>
     
   </div>

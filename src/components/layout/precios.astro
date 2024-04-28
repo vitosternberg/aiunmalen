@@ -3,6 +3,7 @@ import Gallery from "../Gallery.astro";
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
 import Masaje from "../../images/masaje.jpeg"
+import Card from "../Card.astro";
 ---
 <div class="bg-[#fcf5e5] py-12 px-5">
     <div class="grid place-content-center text-center">
@@ -41,32 +42,32 @@ import Masaje from "../../images/masaje.jpeg"
     <div class="col-span-1 md:col-span-1 lg:col-span-1 py-6">
         <!-- Contenido del primer elemento -->
         <ul class="w-100 md:w-4/6 bg-white  divide-y-2 text-center flex-col">
-            <li  >
-            <a class="flex items-center justify-center md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Masaje Relajante 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <li >
+            <a class="flex items-center justify-between md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Masaje Relajante 
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
             </svg> </a>   
             </li>
             <li >
-                <a class="flex items-center justify-center md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Piedras calientes 
+                <a class="flex items-center justify-between  md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Piedras calientes 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg> </a>   
             </li>
             <li >
-                <a class="flex items-center justify-center md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Masaje Facial 
+                <a class="flex items-center justify-between  md:justify-end   text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Masaje Facial 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg> </a>   
             </li>
              <li >
-                <a class="flex items-center  justify-center md:justify-end  text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Reiki 
+                <a class="flex items-center  justify-between  md:justify-end  text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Reiki 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg> </a>   
              </li>
              <li >
-                <a class="flex items-center justify-center md:justify-end text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Manicure permanente 
+                <a class="flex items-center justify-between  md:justify-end text-normal text-[#fcf5e5] bg-[#65a30d] p-2 border-[#65a30d] hover:bg-[#365314] hover:text-white " href="#">Manicure permanente 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="flex w-6 h-6 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                 </svg> </a>   
@@ -81,7 +82,7 @@ import Masaje from "../../images/masaje.jpeg"
             </div>
             <div>
                 <div class="py-2 px-2 justify-center">
-                    <h2 class="font-display text-4xl py-2 text-[#65a30d]">Masaje</h1>
+                    <!-- <h2 class="font-display text-4xl py-2 text-[#65a30d]">Masaje</h1>
                     <h3 class="text-normal text-[#c4b5fd] text-2xl ">$35.000</h3>
                     <p class="py-2 text-balance text-zinc-400 ">
                         Lorem Ipsum is simply dummy text of the printing and
@@ -91,7 +92,12 @@ import Masaje from "../../images/masaje.jpeg"
                         type specimen book. remaining essentially unchanged. It was
                         popularised in the with theLorem Ipsum is simply dummy text
                         of the printing and eentially unchanged.
-                    </p>
+                    </p>-->
+                    
+                    <li class=" list-none">
+                        <Card href="#" title="Masaje" body="Lorem Ipsum is simply dummy text of the . " />
+
+                    </li>
                 </div>
                 <a href="#" class="px-3 py-2 text-white rounded bg-[#65a30d] hover:bg-[#365314] hover:text-white">M&aacutes Servicios</a>
             </div>
